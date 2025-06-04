@@ -5,6 +5,17 @@ This program allows the user to upload multiple images and searches for apples u
 With only RGB images and no depth information, the only way to estimate the distance of the apples from the camera is by using the area of the detection. The larger the area, the closer the apple is assumed to be to the camera.
 The list of apples is sorted by decreasing area, so the closest apple is always at the top of the list.
 
+## Python Files
+
+- **main.py**  
+  Streamlit app: handles UI, file uploads, error messages, and displays results.
+
+- **apple_detector.py**  
+  Apple detection logic: image parsing, prediction, result extraction, and annotation.
+
+- **yolo_engine.py**  
+  YOLO model loader and batch prediction utilities.
+
 ## Installation
 
 Make sure you have Python installed, then install the required packages using:
